@@ -58,3 +58,11 @@ function cal_Tax() {
 
       t_return.getElementsByTagName("span")[0].innerHTML = "ksh" + Tax_Return;
     }
+    function reset_All() {
+      for (let i = 0; i < 8; i++) {
+        inputs[i].value = " ";
+      }
+      for (let i = 0; i < 3; i++) {
+        outputs[i].innerHTML = "";
+      }
+    }
