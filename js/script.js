@@ -41,3 +41,20 @@ function cal_Tax() {
         Tax_Return = (0.12 * Input_Values[2] - Tax_Payable).toFixed(0);
       }
     }
+    //user logic for Output delivery//
+
+      let foo = Number(Input_Values[0] + Input_Values[1]);
+
+      let total = document.getElementById("total");
+      //calculate total income//
+      total.getElementsByTagName("span")[0].innerHTML = "ksh" + foo;
+      let taxable = document.getElementById("taxable");
+      taxable.getElementsByTagName("span")[0].innerHTML = "ksh" + Taxable_Income;
+
+      let payable = document.getElementById("payable");
+      payable.getElementsByTagName("span")[0].innerHTML = "ksh" + Tax_Payable;
+
+      let t_return = document.getElementById("return");
+
+      t_return.getElementsByTagName("span")[0].innerHTML = "ksh" + Tax_Return;
+    }
