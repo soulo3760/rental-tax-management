@@ -29,3 +29,15 @@ function cal_Tax() {
         Input_Values.push(Number(value));
       }
     }
+    let Taxable_Income = Input_Values[0] + Input_Values[1] - Input_Values[3] - Input_Values[4] - Input_Values[5] - Input_Values[6] - Input_Values[7];
+    for (let i = 0; i < 5; i++) {//create another for loop and run loop 5 via condition "5" times as we have five classes/columns for our data which equal to 5 different conditions//
+      if (
+        Taxable_Income > Income_Ranges[i] && //if TI>IR, get only 1 value "i"..first check if it is greater than o and then 121968, 236880 etc and if TI >= IR..eg, if it is more than 121968 and less than 236880//
+        Taxable_Income <= Income_Ranges[i + 1]
+      ) {
+        let Gross_Tax =
+          (Taxable_Income - Income_Ranges[i]) * Tax_Rates[i] + Minimum_Tax[i];//get taxable income and minus IR accordingly as per aray up top, minus TR accordingly and minimum tax for that bracket/category//
+        Tax_Payable = (Gross_Tax - Input_Values[8]).toFixed(0);
+        Tax_Return = (0.12 * Input_Values[2] - Tax_Payable).toFixed(0);
+      }
+    }
