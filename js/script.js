@@ -39,7 +39,7 @@ function cal_Tax() {
         let Gross_Tax =
           (Taxable_Income - Income_Ranges[i]) * Tax_Rates[i] + Minimum_Tax[i];//get taxable income and minus IR accordingly as per aray up top, minus TR accordingly and minimum tax for that bracket/category//
         Tax_Payable = (Gross_Tax - Input_Values[8]).toFixed(0);
-        Tax_Return = (Tax_Payable - 0.12 * Input_Values[2]).toFixed(0);
+        Tax_Return = (Tax_Payable - 0.12 * Input_Values[2]).toFixed(0);//the output figure here can be +ve or -ve, but it basically means that amoount is to be deducted even if it is a +ve figure//
       }
     }
     //user logic for Output delivery//
