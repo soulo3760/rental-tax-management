@@ -8,6 +8,7 @@ let outputs = document.querySelectorAll("#output>div>span");
 //create a functio//
 //create an array of 5 tax ranges//
 //anything over 466,704 k we use number.MAX_VALUE//
+//The Number.MAX_VALUE property represents the maximum numeric value representable in JavaScript.//
 //create an array of 5 minimum taxes for each tax range/bracket//
 //create an array of 5 tax rates//
 //create an empty arrayan call it "input values"//
