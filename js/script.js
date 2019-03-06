@@ -42,7 +42,7 @@ function cal_Tax() {
         Tax_Return = (Tax_Payable - 0.12 * Input_Values[2]).toFixed(0);//the output figure here can be +ve or -ve, but it basically means that amoount is to be deducted even if it is a +ve figure. Also, only 12 percent of Tax withheld is allowed hence the .12//
       }
     }
-    //user logic for Output delivery//
+    //user logic (UI) for Output delivery//
 
       let foo = Number(Input_Values[0] + Input_Values[1]);
 
@@ -60,10 +60,10 @@ function cal_Tax() {
       t_return.getElementsByTagName("span")[0].innerHTML = "ksh" + Tax_Return;
     }
     function reset_All() {
-      for (let i = 0; i < 8; i++) {
+      for (let i = 0; i < 9; i++) {
         inputs[i].value = " ";
       }
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < 4; i++) {
         outputs[i].innerHTML = "";
       }
     }
