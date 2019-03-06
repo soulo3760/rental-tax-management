@@ -18,3 +18,14 @@ function cal_Tax() {
   let Tax_Rates = [0.1, 0.15, 0.20, 0.25, 0.30,];
   let Tax_Return;
   let Tax_Payable;
+  //create for loop//
+  //collect all the input values above and store to empty array "input values"/
+
+    for (let i = 0; i < inputs.length; i++) {
+      let value = inputs[i].value; //create variable and loop goes through each input and stores the value in variable "value"//
+      if (value === "") { //if value has empty string push an integer 0, else the value entered. use push to get integers and not strings//
+        Input_Values.push(Number(0));
+      } else {
+        Input_Values.push(Number(value));
+      }
+    }
