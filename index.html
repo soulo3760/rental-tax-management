@@ -30,6 +30,23 @@ crossorigin="anonymous">
                   <input type="text" class="col-6"> <br>
 
   </div>
+  <div class="col-md-6 col-sm-12 text-white mt-2" id="output">
+           <div class=" m-2 p-2" id="total">Your Total Income:<span class="pl-5"></span>
+           </div>
+           <div class="m-2 p-2" id="taxable">Your Taxable Income: <span class="pl-5"></span>
+           </div>
+           <div class="m-2 p-2 " id="payable">Your Tax Payable: <span class="pl-5"></span>
+           </div>
+           <div class="m-2 p-2" id="return">Your Tax Return: <span class="pl-5"></span>
+           </div>
+
+           <h5 class="btn-group col-12 mt-2">
+               <span class="btn btn-success w-75 mb-1" onclick="cal_Tax()">Calculate</span>
+               <span class=" btn btn-outline-primary mb-1" onclick="reset_All()">Reset</span>
+           </h5>
+             <p class=" text-secondary mb-0 ml-3 text-left">Note: This calculation does not include 2% Medicare Levy!</p>
+           </h5>
+</div>
 </body>
   </body>
 </html>
