@@ -15,3 +15,12 @@ input,
     rgba(248, 250, 248, 0.884)
   );
 }
+label,
+input {
+  color: white;
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #ffffffa8;
+  background: #0cb2e42c;
+}
