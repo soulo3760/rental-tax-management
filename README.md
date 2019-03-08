@@ -5,7 +5,7 @@
 **Nick Waweru- back end engineer**
 **Mohammed ibrahim- front end engineer**
 ## Description
-The online based rental tax management is a program used to assist rental home owners is evalauting their taxable income, tax claims and taxes to be paid to the governing organization.It is intended to save time and reources in providung accurate tax figures. more so, it will let the user know of present tax claims that may exist as at the time of filling the details.
+The online based rental tax management is a program used to assist rental home owners in evalauting their taxable income, tax claims and taxes to be paid to the governing organization.It is intended to save time and reources in providung accurate tax figures. more so, it will let the user know of present tax claims that may exist as at the time of filling the details.
 #livedemo
 
 Watch here how the web app works https://drive.google.com/file/d/1o0djI0wZ5D-V7RtOY3YvVQtJBCeW_rKB/view
