@@ -4,3 +4,14 @@ body {
   margin: 0;
   padding: 0;
 }
+#main-div {
+  box-shadow: 20px 10px 90px rgba(27, 3, 3, 0.466);
+}
+input,
+#header {
+  background: -webkit-linear-gradient(
+    0deg,
+    #05bef7a8 80%,
+    rgba(248, 250, 248, 0.884)
+  );
+}
