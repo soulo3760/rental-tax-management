@@ -24,3 +24,9 @@ input {
   border-bottom: 1px solid #ffffffa8;
   background: #0cb2e42c;
 }
+label {
+  background: #05bef7a8;
+  letter-spacing: 1px;
+  padding-top: 6px;
+  /* font-size: 18px; */
+}
