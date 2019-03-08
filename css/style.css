@@ -30,3 +30,6 @@ label {
   padding-top: 6px;
   /* font-size: 18px; */
 }
+#output > div {
+  background: #05bef7a8;
+}
